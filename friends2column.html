@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> My Website </title>
+	<style>
+		body {
+			/* background-image: url("images/newbluerock.jpg"); */
+			background-color: #000044; /* very dark blue */
+			color: white;
+		}
+		.wrapper {
+			margin: auto;
+			width: 80%;
+			background-color: darkblue;
+		}
+		.left {
+			float: left;
+			width: 150px;
+		}
+		.right {
+			background-image: url("images/newbluerock.jpg");
+			margin-left: 150px;
+			padding: 10px;
+		}
+		#firstdiv {
+			background-image: url("images/clouds.jpg");
+			background-repeat: repeat-x;
+			background-size: cover;
+		}
+		#firstdiv p {
+			color: darkblue;
+			font-weight: bold;
+			font-size: 50pt;
+			font-family: "Apple Chancery", serif;
+			padding-left: 10px;
+			margin: 0px;
+		}
+		#seconddiv {
+			/* margin-top: 20px; */
+		}
+		#seconddiv a {
+			color: lightblue;
+			font-size: 16pt;
+			font-family: arial, sans-serif;
+			text-decoration: none;
+			display: block;
+			border-bottom: 1px solid lightblue;
+			padding: 5px;
+		}
+		#seconddiv a:hover {
+			color: darkblue;
+			background-color: lightblue;
+		}
+		table {
+			border: 2px solid lightblue;
+			border-collapse: collapse;
+			width: 400px;
+		}
+		th, td {
+			padding: 5px;
+			font-family: Verdana, sans-serif;
+			border: 2px solid lightblue;
+		}
+		td:nth-of-type(2) {
+			text-align: center;
+		}
+		table caption {
+			font-weight: bold;
+			font-size: 18pt;
+			font-family: Verdana, sans-serif;
+		}
+		p {
+			font-size: 10pt;
+			font-family: Verdana, sans-serif;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+			
+		<header>
+			<div id="firstdiv"> <p> My Website </p> </div>
+		</header>
+		
+		<div class="left">
+			<div id="seconddiv">
+				<a href="index.html"> Home </a>
+				<a href="about.html"> About Me </a>
+				<a href="friends.html"> Friends </a>
+				<a href="hobbies.html"> Hobbies </a>
+			</div>
+		</div>
+
+		<div class="right">
+			
+			<p> This website contains information about me. </p>
+			
+			<table>
+				<caption> My Friends </caption>
+				<tr> 
+					<th> Name </th>
+					<th> Age </th>
+					<th> Location </th>
+				</tr>
+				<tr>
+					<td> Afsheen </td>
+					<td> 15 </td>
+					<td> Cupertino CA </td>
+				</tr>
+				<tr>
+					<td> Nithya </td>
+					<td> 14 </td>
+					<td> Cupertino CA </td>
+				</tr>
+				<tr>
+					<td> Vedavi </td>
+					<td> 15 </td>
+					<td> Cupertino CA </td>
+				</tr>
+				<tr>
+					<td> Rhea </td>
+					<td> 14 </td>
+					<td> Cupertino CA </td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+</body>
+</html>

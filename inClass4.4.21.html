@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<title> Forms with CSS </title>
+	<meta charset="utf-8"> 
+	<style>
+		form {
+			background-image: url("images/teal.jpg");
+			color: white;
+			font-family: arial, sans-serif;
+			width: 600px;
+			padding: 10px;
+		}
+		button {
+			background-color: seagreen;
+			color: white;
+			font-size: 14pt;
+			padding: 5px;
+			margin-right: 10px;
+		}
+		button:hover {
+			background-color: white;
+			color: seagreen;
+		}
+	</style>
+</head>
+<body>
+	<form> 
+		<p> Name: <input type="text" name="name" id="name"> </p>
+		<p> Email: <input type="text" name="email" id="email"> </p>
+		<p> Comments: </p>
+		<textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+		<p><button>Submit</button>
+		<button>Reset</button></p>
+	</form>
+</body>
+</html>

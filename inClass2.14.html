@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html land = "en">
+<head>
+	<title> Computing Survey </title>
+	<meta charset = "utf-8">
+</head>
+
+<body>
+	<h1> Computing Survey </h1>
+
+	<form>
+		<fieldset>
+		<Legend> User Information </Legend>
+		<p> <label> Name: <input type="text" name="name" id="name" tabindex="1"> </label> </p>
+		<p> <label> Email: <input type="text" name="email" id="email" size="40" tabindex="2"> </label> </p>
+		<p> <label> Zipcode: <input type="text" name="zipcode" id="zipcode" size="5" maxlength="5" tabindex="3"> </label> </p>
+		</fieldset>
+		<br>
+
+		<fieldset>
+		<legend> Computing Interests </legend>
+		<p>
+		Which social media do you use? <br>
+		<input type="checkbox" name="facebook" id="facebook"> Facebook <br>
+		<input type="checkbox" name="twitter" id="twitter"> Twitter <br>
+		<input type="checkbox" name="youtube" id="youtube"> Youtube <br>
+		<input type="checkbox" name="instagram" id="instragram" checked> Instagram <br>
+		<input type="checkbox" name="linkedin" id="linkedin"> LinkedIn <br>
+		</p>
+
+		<p>
+		Which is your favorite social media? <br>
+		<input type="radio" name="media" id="facebook" value="Facebook"> Facebook <br>
+		<input type="radio" name="media" id="twitter" value="Twitter"> Twitter <br>
+		<input type="radio" name="media" id="youtube" value="Youtube"> Youtube <br>
+		<input type="radio" name="media" id="instagram" value="Instagram"> Instagram <br>
+		<input type="radio" name="media" id="linkedin" value="LinkedIn"> LinkedIn <br>
+		</p>
+
+		<p>
+		<select name="favcomputer" id="favcomputer"> 
+			<option> Select your favorite computing device </option>
+			<option value="desktop"> Desktop </option>
+			<option value="laptop"> Laptop </option>
+			<option value="iPod"> iPod </option>
+			<option value="tablet"> Tablet </option>
+			<option value="smartphone"> Smartphone </option>
+		</select>
+		</p>
+
+		<p>
+		<select name="favcomputer" id="favcomputer" size="3"> 
+			<option> Select your favorite computing device </option>
+			<option value="desktop" selected> Desktop </option>
+			<option value="laptop"> Laptop </option>
+			<option value="iPod"> iPod </option>
+			<option value="tablet"> Tablet </option>
+			<option value="smartphone"> Smartphone </option>
+		</select>
+		</p>
+		</fieldset>
+		<br>
+
+		<p>
+		<label for="comments">
+		Comments: </label> <br>
+		<textarea name="comments" id="comments" cols="50" rows="10" tabindex="4"> Enter your comments here </textarea>
+		</p>
+
+		<p>
+		<input type="submit" value="Submit Survey">
+		<input type="reset" value="Clear Form">
+		</p>
+	</form>
+</body>
+</html>

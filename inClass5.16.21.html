@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+	<title> Grid Layout </title>
+	<meta charset="utf-8">
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			background-color: darkgreen;
+			padding: 10px;
+			margin-bottom: 50px;
+			width: 50%;
+			/*grid-column-gap: 10px;
+			grid-row-gap: 5px;
+			grid-gap: 5px 10px;*/
+			grid-gap: 10px;
+		}
+		.container2 {
+			grid-template-columns: 100px auto 200px;
+		}
+		.container3 {
+			grid-template-rows: 100px 50px 150px;
+		}
+		.container4 {
+			grid-template-columns: 50px 50px 50px;
+			height: 400px;
+			justify-content: center; /* space-evenly, space-around, space-between, start, end */
+			align-items: center;
+		}
+		.container div {
+			background-color: lightgreen;
+			padding: 20px;
+			font-size: 18pt;
+			text-align: center;
+			border: 1px solid black;
+		}
+		.item1 {
+			grid-column-start: 1;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 3;
+		}
+	</style>
+<body>
+	<div class="container">
+		<div> 1 </div>
+		<div> 2 </div>
+		<div> 3 </div>
+		<div> 4 </div>
+		<div> 5 </div>
+		<div> 6 </div>
+		<div> 7 </div>
+		<div> 8 </div>
+		<div> 9 </div>
+	</div>
+
+	<div class="container">
+		<div class="item1"> 1 </div>
+		<div> 2 </div>
+		<div> 3 </div>
+		<div> 4 </div>
+		<div> 5 </div>
+		<div> 6 </div>
+		<div> 7 </div>
+		<div> 8 </div>
+	</div>
+
+	<div class="container container2">
+		<div> 1 </div>
+		<div> 2 </div>
+		<div> 3 </div>
+		<div> 4 </div>
+		<div> 5 </div>
+		<div> 6 </div>
+		<div> 7 </div>
+		<div> 8 </div>
+		<div> 9 </div>
+	</div>
+
+	<div class="container container3">
+		<div> 1 </div>
+		<div> 2 </div>
+		<div> 3 </div>
+		<div> 4 </div>
+		<div> 5 </div>
+		<div> 6 </div>
+		<div> 7 </div>
+		<div> 8 </div>
+		<div> 9 </div>
+	</div>
+
+	<div class="container container4">
+		<div> 1 </div>
+		<div> 2 </div>
+		<div> 3 </div>
+		<div> 4 </div>
+		<div> 5 </div>
+		<div> 6 </div>
+		<div> 7 </div>
+		<div> 8 </div>
+		<div> 9 </div>
+	</div>
+</body>
+</head>
+</html>

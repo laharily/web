@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Normal Flow </title>
+	<meta charset="utf-8">
+	<style>
+		#first, #outer {
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			border: 1px solid black;
+			padding: 5px;
+		}
+		#second, #inner {
+			width: 100px;
+			height: 100px;
+			background-color: lightgreen;
+			border: 1px solid black;
+			padding: 5px;
+			margin: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1> Normal Flow </h1>
+
+	<div id="first">
+		This is the first box.
+	</div>
+
+	<div id="second">
+		This is the second box.
+	</div>
+
+	<div id="outer">
+		This is the outer box.
+		<div id="inner">
+			This is the inner box.
+		</div>
+	</div>
+</body>
+</html>

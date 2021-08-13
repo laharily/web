@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> My Bio </title> 
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="myBioStylesheet.css">
+	<style>
+		img {
+			width: 300px;
+		}
+		.content {
+			margin-top: 20px;
+		}
+		.content, .content2 {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.content div, .content2 div {
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1> Photo Gallery </h1>
+		</header>
+
+		<!-- Navigation !--> 
+		<div class="left">
+			<nav>
+				<ul>
+					<li> <a href="mybio.html">Bio</a> </li>
+					<li> <a href="gallery.html"  class="current">Gallery</a> </li>
+					<li> <a href="contactMe.html">Contact Me</a> </li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Right Side !-->
+		<div class="right">
+			
+			<!-- Content !-->
+			
+			<!-- Flexbox 1 !-->
+			<div class="content">
+				<div> 
+					<img src="images/oldtownroad.jpg" alt="Old Town Road">
+				</div>
+				<div> 
+					<img src="images/naturewalk.jpg" alt="Nature Walk">
+				</div>
+				<div> 
+					<img src="images/wintertrees.jpg" alt="Winter Trees">
+				</div>
+			</div>
+
+			<!-- Flexbox 2 !-->
+			<div class="content2">
+				<div> 
+					<img src="images/dandelion.jpg" alt="Dandelion">
+				</div>
+				<div> 
+					<img src="images/sandsunset.jpg" alt="Sunset on the Beach">
+				</div>
+				<div> 
+					<img src="images/palmtrees.jpg" alt="Palm Trees">
+				</div>
+			</div>
+			
+			<!-- Footer !-->
+			<footer>
+				<p> Copyright &copy; 2021 LY </p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

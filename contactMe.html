@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> My Bio </title> 
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="myBioStylesheet.css">
+	<style>
+		.wrapper {
+			height: 100vh;
+		}
+		.right {
+			text-align: center;
+			height: 89.5vh;
+		}
+		form {
+	        width: 450px;
+	        padding: 30px;
+	        margin: auto;
+	        font-family: Rockwell, Courier;
+	        font-size: 15pt;
+	        color: purple;
+        }
+      	input, textarea {
+        	margin: 5px;
+      	}
+      	.button {
+	        background-color: lavender;
+	        color: purple;
+	        padding: 5px;
+	        font-family: Rockwell, Courier;
+	        font-size: 13pt;
+	        margin: 10px;
+      	}
+      	.button:hover {
+        	color: white;
+        	background-color: purple;
+      	}
+      	fieldset {
+	        border: 1px solid purple;
+	        margin-bottom: 20px;
+      	}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1> Contact Me </h1>
+		</header>
+
+		<!-- Navigation !--> 
+		<div class="left">
+			<nav>
+				<ul>
+					<li> <a href="mybio.html">Bio</a> </li>
+					<li> <a href="gallery.html">Gallery</a> </li>
+					<li> <a href="contactMe.html" class="current">Contact Me</a> </li>
+				</ul>
+			</nav>
+		</div>
+
+		<!-- Right Side !-->
+		<div class="right">
+			
+			<!-- Content !-->
+			<div class="content">
+				<form>
+					<fieldset>
+						<legend> User Information </legend>
+					    	Name:
+					      	<input type="text" name="name" id="name"> <br>
+					      	Email:
+					      	<input type="text" name="email" id="email"> <br>
+					      	Phone:
+					      	<input type="text" name="phone" id="phone">
+					</fieldset>
+					      Comments: <br>
+					      <textarea name="comments" id="comments" cols="50" rows="10"></textarea><br>
+					      <input type="submit" value="Submit" class="button">
+					      <input type="reset" value="Reset" class="button">
+				</form>
+			</div>
+			
+			<!-- Footer !-->
+			<footer>
+				<p> Copyright &copy; 2021 LY </p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

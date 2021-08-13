@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<title> Tables with CSS </title>
+	<meta charset="utf-8">
+	<style>
+	table {
+		border: 1px solid black;
+		border-collapse: collapse;
+		width: 500px;
+		margin: auto;
+	}
+	td, th {
+		/*border: 1px solid black;*/
+		padding: 5px;
+		font-family: arial, sans-serif;
+	}
+	th {
+		background-color: blue;
+		color: white;
+		font-size: 14pt;
+	}
+	caption {
+		font-weight: bold;
+		font-family: arial, sans-serif;
+		font-size: 16pt;
+	}
+	#avg {
+		text-align: left;
+		font-size: 12pt;
+		border-right: 1px solid white;
+	}
+	td:nth-of-type(2), td:nth-of-type(3),
+	.rain, .snow {
+		text-align: center;
+		font-size: 12pt;
+	}
+	tr:nth-of-type(even) {
+		background-color: lightblue;
+	}
+	#city {
+		vertical-align: center;
+		border-right: 1px solid white;
+	}
+	</style>
+</head>
+<body> 
+	<table>
+		<caption>Annual Precipitation for California Cities</caption>
+		<tr> 
+			<th rowspan="2" id="city">City</th>
+			<th colspan="2">Annual Precipitation (inches)</th>
+		</tr>
+		<tr>
+			<th class="rain">Rain</th>
+			<th class="snow">Snow</th>
+		</tr>
+		<tr>
+			<td>Cupertino</td>
+			<td>14</td>
+			<td>6</td>
+		</tr>
+		<tr>
+			<td>Sunnyvale</td>
+			<td>10</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>San Jose</td>
+			<td>12</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<th id="avg">Average</th>
+			<th class="rain">12</th>
+			<th class="snow">4</th>
+		</tr>
+	</table>
+</body>
+</html>

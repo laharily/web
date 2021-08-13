@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html land="en">
+<head>
+	<title> Page Layout </title>
+	<meta charset="utf-8">
+	<style>
+		.header {
+			grid-area: header;
+		}
+		.menu {
+			grid-area: menu;
+		}
+		.main {
+			grid-area: main;
+		}
+		.aside {
+			grid-area: aside;
+		}
+		.footer {
+			grid-area: footer;
+		}
+		.container {
+			display: grid;
+			grid-template-areas: 
+				'header header header header header'
+				'menu main main main aside'
+				'menu main main main aside'
+				'menu main main main aside'
+				'menu footer footer footer footer';
+			background-color: darkgreen;
+			padding: 10px;
+			margin-bottom: 50px;
+			width: 50%;
+			height: 700px;
+			/*grid-column-gap: 10px;
+			grid-row-gap: 5px;
+			grid-gap: 5px 10px;*/
+			grid-gap: 10px;
+		}
+		.container div {
+			background-color: lightgreen;
+			padding: 20px;
+			font-size: 18pt;
+			text-align: center;
+			border: 1px solid black;
+	</style>
+<body>
+	<div class="container">
+		<div class="header"> Header </div>
+		<div class="menu"> Menu </div>
+		<div class="main"> Main </div>
+		<div class="aside"> Aside </div>
+		<div class="footer"> Footer </div>
+	</div>
+
+</body>
+</head>
+</html>

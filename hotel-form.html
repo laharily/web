@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Hotel Finder </title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<h1> Hotel Finder </h1>
+
+	<form>
+		<fieldset>
+		<legend> Reservation Information </legend>
+		<p>
+		<label> Name: <input type="text" name="city" id="city"> </label> </p>
+		<p>
+		State: 
+		<select name="state" id="state"> 
+			<option value="North Carolina"> North Carolina </option>
+			<option value="South Carolina"> South Carolina </option>
+			<option value="Tennessee"> Tennessee </option>
+			<option value="Virginia"> Virginia </option>
+		</select>
+		</p>
+		<p> <label> Check-in date: <input type="date" name="check-in" id="check-in"> </label> </p>
+		<p> <label> Check-out date: <input type="date" name="check-out" id="check-out"> </label> </p>
+		<p> Adults:
+		<select name="adult" id="adult"> 
+			<option value="1"> 1 </option>
+			<option value="2"> 2 </option>
+			<option value="3"> 3 </option>
+			<option value="4"> 4 </option>
+		</select>
+
+		Children:
+		<select name="children" id="children"> 
+			<option value="0"> 0 </option>
+			<option value="1"> 1 </option>
+			<option value="2"> 2 </option>
+			<option value="3"> 3 </option>
+			<option value="4"> 4 </option>
+		</select>
+		</p>
+		<p> Number of Rooms:
+		<select name="rooms" id="rooms"> 
+			<option value="1"> 1 </option>
+			<option value="2"> 2 </option>
+			<option value="3"> 3 </option>
+			<option value="4"> 4 </option>
+		</select>
+		</p>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> Room Information </legend>
+		<p> 
+		Room Type: <br>
+		<input type="radio" name="type" id="Double" value="Double"> Double <br>
+		<input type="radio" name="type" id="King" value="King"> King <br>
+		<input type="radio" name="type" id="Suite" value="Suite"> Suite <br>
+		</p>
+		<p> Amenities: <br>
+		<input type="checkbox" name="High-speed Internet" id="internet"> High-speed Internet <br>
+		<input type="checkbox" name="Flat-Screen TV" id="tv"> Flat-Screen TV <br>
+		<input type="checkbox" name="Refrigerator" id="refrigerator"> Refrigerator <br>
+		<input type="checkbox" name="Environmentally Friendly" id="eco-friendly"> Environmentally Friendly <br>
+		</p>
+		</fieldset>
+		<p>
+		<fieldset>
+			<legend> Special Requests </legend>
+		<p>
+		<label for="special"> </label>
+		<textarea name="special" id="special" cols="50" rows="5"> </textarea>
+		</p>
+		</fieldset>
+		<p>
+		<input type="submit" value="Reserve">
+		<input type="reset" value="Reset">
+		</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Flexbox Sections </title>
+	<meta charset="utf-8">
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+		.container {
+			background-color: whitesmoke;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			font-family: Arial;
+			border: 1px solid lightgray;
+			padding: 10px;
+		}
+		section {
+			width: 32%;
+			border: 1px solid lightgray;
+			background-color: white;
+			box-shadow: 1px 1px 5px darkgray;
+		}
+		section h2 {
+			background-color: steelblue;
+			color: white;
+			padding: 10px;
+			margin: 0 0 10px 0;
+		}
+		section p {
+			color: gray;
+			padding: 10px;
+			font-size: 11pt;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		
+		<section>
+			<h2> Looking Glass Falls </h2>
+			<p> This is my favorite waterfall. It is along Hwy 276 in the Cradle of Forestry and Land of Waterfalls near Brevard NC. It can be viewed from a parking area right along the road. There is a distinctive rock formation around the waterfall. </p>
+		</section>
+
+		<section>
+			<h2> Second Falls </h2>
+			<p> This waterfall is in Graveyard Fields along the Blue Ridge Parkway. It is also one of my favorites. </p>
+		</section>
+
+		<section>
+			<h2> Mt. Pisgah </h2>
+			<p> This is a 5721 ft mountain on the Blue Ridge Parkway in my favorite section. There is an iconic TV tower on top that can be reached by a hiking trail to the summit. </p>
+		</section>
+
+	</div>
+</body>
+</html>

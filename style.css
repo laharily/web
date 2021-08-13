@@ -1,0 +1,61 @@
+body {
+	background-color: teal; 
+	color: white;
+}
+p {
+	font-size: 10pt;
+	font-family: verdana, helvetica, sans-serif;
+	text-indent: 2em;
+}
+h1 {
+	color: teal;
+	font-family: Arial, sans-serif;
+	background-color: white;
+}
+h2 {
+	font-family: Arial, sans-serif;
+}
+h3 {
+	color: teal;
+	font-family: Arial, sans-serif;
+	background-color: lightgreen;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+ul {
+	font-family: Arial, sans-serif;
+}
+a {
+	color: lightgreen;
+}
+nav a {
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: Arial, sans-serif;
+	margin-right: 10px;
+}
+.favorite {
+	background-color: skyblue;
+	padding: 2px
+}
+footer {
+	font-size: 8pt;
+	font-style: italic;
+	border-top: 1px solid lightgreen;
+	padding-top: 5px;
+}
+.wrapper {
+	margin: auto;
+	width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+

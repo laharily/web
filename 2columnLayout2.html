@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Two-Column Layout 2 </title>
+	<meta charset="utf-8">
+	<style>
+		body {
+			background-color: #88bbff; /* hexademical color system */
+			font-family: sans-serif;
+		}
+		.wrapper {
+			width: 80%;
+			margin: auto;
+			background-color: rgb(120, 0, 250); /* rgb color system */
+			height: 100vh; /* viewport (window) height  */
+		}
+		.left {
+			float: left;
+			width: 150px;
+			height: 90vh; 
+		}
+		.right {
+			margin-left: 150px;
+			background-color: lightgreen; /* color name system */
+			height: 90vh; 
+		}
+		.content, footer {
+			padding: 5px 10px; /*  top/bottom  left/right  */
+		}
+		header {
+			color: white;
+			padding: 10px;
+			background-color: green;
+			border-left: 1px solid lightgreen;
+		}
+		h1 {
+			margin: 0;
+		}
+		nav ul {
+			list-style: none; /* remove list bullets */
+			margin: 0;
+			padding: 0;
+		}
+		nav a {
+			background-color: green;
+			color: white;
+			text-decoration: none; /* remove underlines */
+			font-weight: bold;
+			padding: 10px;
+			border-bottom: 1px solid white;
+			display: block; /* vertical display */
+		}
+		nav a:hover {
+			background-color: lightgray;
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="left">
+			<nav>
+				<ul> 
+					<li> <a href="index.html">Home</a> </li>
+					<li> <a href="about.html">About</a> </li>
+					<li> <a href="contact.html">Contact</a> </li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="right">
+			<header>
+				<h1> Balsam Fir </h1>
+			</header>
+			
+			<div class="content">
+				<p> This is a balsam fir tree which is common in the Eastern US and Canada. They are often found in higher elevations. </p>
+
+				<img src="images/tree.jpg" alt="Balsam Fir Tree" id="tree">
+			</div>
+
+			<footer>
+				<p> Copyright &copy; 2021 LY </p>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>

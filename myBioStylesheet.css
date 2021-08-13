@@ -1,0 +1,63 @@
+		body {
+			background-color: hotpink;
+		}
+		.wrapper {
+			width: 80%;
+			margin: auto;
+			background-color: lavender;
+			color: purple;
+			font-family: Rockwell, Courier;
+			font-size: 15pt;
+			text-align: center;
+		}
+		.left {
+			float: left;
+			width: 150px;
+			border-top: 1px solid white;
+		}
+		.right {
+			margin-left: 150px;
+			background-color: pink;
+			padding: 5px 10px; 
+			border-left: 1px solid purple;
+		}
+		header {
+			color: purple;
+			font-family: "Apple Chancery", "Georgia";
+			font-size: 20pt;
+			background-color: lavender;
+			text-align: left;
+			border-bottom: 1px solid purple;
+		}
+		h1 {
+			margin: 0;
+			padding: 0 0 0 10px;
+		}
+		nav ul {
+			list-style: none; /* remove list bullets */
+			margin: 0;
+			padding: 0;
+		}
+		nav a {
+			background-color: lavender;
+			color: blue;
+			text-decoration: none; /* remove underlines */
+			padding: 10px;
+			border-bottom: 1px solid purple;
+			display: block; /* vertical display */
+		}
+		nav a:hover {
+			background-color: purple;
+			color: white;
+		}
+		footer p {
+			margin: 50px 0 20px 0;
+			font-size: 11pt;
+		}
+		.current {
+			background-color: purple;
+			color: white;
+		}
+		a {
+			color: purple;
+		}

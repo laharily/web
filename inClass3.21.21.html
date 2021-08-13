@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<title> Cascade and Inheritance </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="cascade.css">
+	<style>
+		body {
+			color: blue;
+		}
+		div {
+			font-family: arial, sans-serif;
+			color: green;
+		}
+		p {
+			font-family: "times new roman", serif;
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body> 
+	<p> External and embedded styles are applied to this paragraph. Text color from embedded style sheet overrides text color from external style sheet. </p>
+
+	<p style="color: red"> Inline styles cause this paragraph to have red text which overrides colors from both the embedded and the external style sheets. </p>
+
+	<div>
+		<h1> Heading in Arial font is inherited from the div</h1>
+		<p> Paragraph inside a div in Times New Roman font overrides the Arial font of the div. Inherits the green color from the div. </p>
+	</div>
+
+	<p><strong>Strong text</strong> inside a strong tag will override the normal font weight in the embedded style sheet. </p>
+
+	<p> The order of precedence is: External, embedded, in-line, tags. </p>
+
+</body>
+</html>

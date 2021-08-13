@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Music Survey </title>
+	<meta charset = "utf-8">
+</head>
+<body>
+	<h1> Music Survey </h1>
+
+	<form>
+		<p>
+		<label> Name: <input type="text" name="name" id="name"> </label>
+		</p>
+		<p>
+		<label> Email: <input type="text" name="email" id="email" placeholder="name@domain.com" size="30"> </label>
+		</p>
+		<fieldset>
+			<legend> Which types of music do you listen to? </legend>
+		<p> 
+		<input type="checkbox" name="Pop" id="Pop"> Pop <br>
+		<input type="checkbox" name="Rock" id="Rock"> Rock <br>
+		<input type="checkbox" name="Rap" id="Rap"> Rap <br>
+		<input type="checkbox" name="Country" id="Country"> Country <br>
+		<input type="checkbox" name="Classical" id="Classical"> Classical <br>
+		<input type="checkbox" name="Jazz" id="Jazz"> Jazz <br>
+		<input type="checkbox" name="Other" id="Other"> Other <br>
+		</p>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend> How often do you purchase music CDs? </legend>
+		<p> 
+		<input type="radio" name="music" id="Weekly" value="Weekly"> Weekly <br>
+		<input type="radio" name="music" id="Monthly" value="Monthly"> Monthly <br>
+		<input type="radio" name="music" id="Several" value="Several" checked> Several each year <br>
+		<input type="radio" name="music" id="Few" value="Few"> A few each year <br>
+		<input type="radio" name="music" id="Never" value="Never"> Never <br>
+		</p>
+		</fieldset>
+		<br>
+		<p>
+		Select the locations you listen to music: 
+			<br>
+		<select name="locations" id="locations" size="3" multiple> 
+			<option value="At home" selected> At home </option>
+			<option value="In the car"> In the car </option>
+			<option value="At work or school"> At work or school </option>
+			<option value="Anywhere"> Anywhere (MP3 player) </option>
+			<option value="Other"> Other </option>
+		</select>
+		</p>
+		<br>
+		<p>
+		<label for="comments">
+		What role does music play in your life? </label> <br>
+		<textarea name="comments" id="comments" cols="50" rows="10"> </textarea>
+		</p>
+
+		<p>
+		<input type="submit" value="Submit">
+		<input type="reset" value="Reset">
+		</p>
+	</form>
+</body>
+</html>

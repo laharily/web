@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset = "utf-8"/>
+    <title>Order Information</title>
+    <style>
+      form {
+        width: 700px;
+        padding: 10px;
+        background-color: skyblue;
+        font-family: Verdana, sans-serif;
+      }
+      fieldset {
+        margin-bottom: 10px;
+        border: 2px solid blue;
+      }
+      legend {
+        font-weight: bold;
+        color: blue;
+        font-size: 14pt;
+        font-family: Arial, sans-serif;
+      }
+      input, select {
+        margin-top: 10px;
+      }
+      .button {
+        color: skyblue;
+        background-color: blue;
+        padding: 5px;
+        margin-right: 10px;
+        font-weight: bold;
+        font-size: 12pt;
+        font-family: arial, sans-serif;
+      }
+      .button:hover {
+        background-color: skyblue;
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Order Information</h1>
+
+    <form>
+      <fieldset>
+      <legend>Customer Information</legend>
+      Name:
+        <input type = "text" name = "name" id = "name" size = "30"> <br>
+
+      Address: <input type = "text" name = "address" id = "address" size = "50"> <br>
+
+      City: <input type = "text" name = "city" id = "city"> <br>
+
+      State:
+      <select name = "state" id = "state">
+        <option value = "nc">NC</option>
+        <option value = "sc">SC</option>
+        <option value = "tn">TN</option>
+        <option value = "va">VA</option>
+      </select> <br>
+
+      Zip code: <input type = "text" name = "zip" id = "zip" maxlength = "5" size = "10">
+      </fieldset>
+
+      <fieldset>
+      <legend>Credit Card Information</legend>
+
+      Credit card type:
+      <input type = "radio" name = "cardtype" id = "master" value = "master"> MasterCard
+      <input type = "radio" name = "cardtype" id = "visa" value = "visa"> Visa
+      <input type = "radio" name = "cardtype" id = "amex" value = "amex"> American Express <br>
+
+      Card number (no dashes): <input type = "text" name = "cardnum" id = "cardnum" maxlength = "16"> <br>
+
+      Card security code: <input type = "text" name = "cardsecurity" id = "cardsecurity" size = "5" maxlength = "3"> <br>
+
+      Expiration date:
+      Month:
+      <select name = "month" id = "month">
+        <option value = "January">January</option>
+        <option value = "February">February</option>
+        <option value = "March">March</option>
+        <option value = "April">April</option>
+        <option value = "May">May</option>
+        <option value = "June">June</option>
+        <option value = "July">July</option>
+        <option value = "August">August</option>
+        <option value = "September">September</option>
+        <option value = "October">October</option>
+        <option value = "November">November</option>
+        <option value = "December">December</option>
+      </select>
+
+      Year:
+      <select name = "year" id = "year">
+        <option value = "2014">2014</option>
+        <option value = "2015">2015</option>
+        <option value = "2016">2016</option>
+        <option value = "2017">2017</option>
+        <option value = "2018">2018</option>
+      </select>
+      </fieldset>
+
+      <input type = "checkbox" name = "mailing" id = "mailing">
+      Join our email mailing list for updates and offers <br>
+
+      <input type = "submit" value = "Place Order" class = "button">
+      <input type = "reset" value = "Reset" class = "button">
+    </form>
+
+  </body>
+</html>

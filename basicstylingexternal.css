@@ -1,0 +1,56 @@
+body {
+			background-color: lightblue;
+			color: darkblue;
+			font-family: verdana, helvetica, sans-serif;
+		}
+		h1 {
+			background-color: darkblue;
+			color: lightblue;
+		}
+		h2 {
+			background-color: cyan;
+			text-align: center;
+		}
+		h1, h2 {
+			font-family: arial, helvetica, sans-serif;
+		}
+		p {
+			font-size: 14pt;
+			text-indent: 2em;
+		}
+		ul {
+			font-size: 12pt;
+			font-weight: bold;
+		}
+		footer {
+			font-size: 8pt;
+			font-style: italic;
+			border-top: 1px solid blue;
+			padding-top: 10px;
+			width: 30%;
+		}
+		#big {
+			font-size: 32pt;
+		}
+		#left {
+			text-align: left;
+		}
+		.focus {
+			color: red;
+		}
+		.important {
+			background-color: yellow;
+		}
+		footer a {
+			color: green;
+			font-size: 8pt;
+		}
+		#morestuff {
+			border: 2px dashed blue;
+			padding: 10px;
+			width: 300px;
+		}
+		.wrapper {
+			width: 80%;
+			margin: auto;
+		}
